@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using VendasOnline.API.Configuracoes;
+using VendasOnline.API.Middlewares;
 using VendasOnline.Infraestrutura.Contexto;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -29,6 +30,8 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+app.UseMiddleware<ExceptionMiddleware>();
 
 app.MapControllers();
 
