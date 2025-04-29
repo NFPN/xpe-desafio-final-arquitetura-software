@@ -2,11 +2,15 @@ using Microsoft.EntityFrameworkCore;
 using VendasOnline.API.Configuracoes;
 using VendasOnline.API.Middlewares;
 using VendasOnline.Infraestrutura.Contexto;
+using static VendasOnline.API.Configuracoes.SwaggerConfig;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Adicionar serviços ao container.
 builder.Services.AddControllers();
+
+// Adicionar suporte a AutoMapper
+builder.Services.AddAutoMapper(typeof(AutoMapperConfig));
 
 // Adicionar contexto de banco de dados
 builder.Services.AddDbContext<VendasOnlineDbContext>(options =>

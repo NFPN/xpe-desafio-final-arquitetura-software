@@ -2,7 +2,7 @@
 
 namespace VendasOnline.API.Configuracoes
 {
-    public static class SwaggerConfig
+    public static partial class SwaggerConfig
     {
         public static IServiceCollection ConfigurarSwagger(this IServiceCollection services)
         {
