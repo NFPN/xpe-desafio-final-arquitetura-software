@@ -15,6 +15,6 @@ namespace VendasOnline.Dominio.DTOs
         public int ClienteId { get; set; }
 
         [Required(ErrorMessage = "O pedido deve ter pelo menos um item")]
-        public List<ItemPedidoDto> Itens { get; set; }
+        public List<ItemPedidoDto>? Itens { get; set; }
     }
 }

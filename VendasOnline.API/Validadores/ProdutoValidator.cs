@@ -3,6 +3,9 @@ using VendasOnline.Dominio.DTOs;
 
 namespace VendasOnline.API.Validadores
 {
+    /// <summary>
+    /// Validador para o DTO de Produto
+    /// </summary>
     public class ProdutoValidator : AbstractValidator<ProdutoDto>
     {
         public ProdutoValidator()

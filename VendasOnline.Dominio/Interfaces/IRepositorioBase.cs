@@ -2,6 +2,10 @@
 
 namespace VendasOnline.Dominio.Interfaces
 {
+    /// <summary>
+    /// Interface genérica para repositórios
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public interface IRepositorioBase<T> where T : class
     {
         Task<T> ObterPorIdAsync(int id);

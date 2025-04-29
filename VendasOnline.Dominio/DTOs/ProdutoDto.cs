@@ -8,10 +8,10 @@ namespace VendasOnline.Dominio.DTOs
 
         [Required(ErrorMessage = "O nome do produto é obrigatório")]
         [StringLength(100, ErrorMessage = "O nome do produto deve ter no máximo 100 caracteres")]
-        public string Nome { get; set; }
+        public required string Nome { get; set; }
 
         [StringLength(500, ErrorMessage = "A descrição deve ter no máximo 500 caracteres")]
-        public string Descricao { get; set; }
+        public required string Descricao { get; set; }
 
         [Required(ErrorMessage = "O preço é obrigatório")]
         [Range(0.01, double.MaxValue, ErrorMessage = "O preço deve ser maior que zero")]

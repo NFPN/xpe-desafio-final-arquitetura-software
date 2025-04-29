@@ -2,6 +2,9 @@
 
 namespace VendasOnline.Dominio.Interfaces
 {
+    /// <summary>
+    /// Interface genérica para serviços
+    /// </summary>
     public interface IServicoBase<T> where T : class
     {
         Task<T> ObterPorIdAsync(int id);

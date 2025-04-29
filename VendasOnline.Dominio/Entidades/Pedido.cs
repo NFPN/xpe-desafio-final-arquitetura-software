@@ -10,8 +10,8 @@ namespace VendasOnline.Dominio.Entidades
         public decimal ValorTotal { get; set; }
 
         public int ClienteId { get; set; }
-        public virtual Cliente Cliente { get; set; }
+        public virtual Cliente? Cliente { get; set; }
 
-        public virtual ICollection<ItemPedido> Itens { get; set; }
+        public virtual ICollection<ItemPedido>? Itens { get; set; }
     }
 }

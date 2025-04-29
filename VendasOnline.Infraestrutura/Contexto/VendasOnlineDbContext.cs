@@ -3,6 +3,10 @@ using VendasOnline.Dominio.Entidades;
 
 namespace VendasOnline.Infraestrutura.Contexto
 {
+    /// <summary>
+    /// Contexto do banco de dados VendasOnline, herda de DbContext.
+    /// Esta classe é responsável por configurar o banco de dados e mapear as entidades.
+    /// </summary>
     public class VendasOnlineDbContext(DbContextOptions<VendasOnlineDbContext> options)
         : DbContext(options)
     {

@@ -6,6 +6,9 @@ namespace VendasOnline.API.Configuracoes
 {
     public static partial class SwaggerConfig
     {
+        /// <summary>
+        /// Configuração do AutoMapper
+        /// </summary>
         public class AutoMapperConfig : Profile
         {
             public AutoMapperConfig()

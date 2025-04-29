@@ -3,6 +3,9 @@ using System.Text.Json;
 
 namespace VendasOnline.API.Middlewares
 {
+    /// <summary>
+    /// Middleware para tratamento de exceções não tratadas.
+    /// </summary>
     public class ExceptionMiddleware(
         RequestDelegate next,
         ILogger<ExceptionMiddleware> logger)
